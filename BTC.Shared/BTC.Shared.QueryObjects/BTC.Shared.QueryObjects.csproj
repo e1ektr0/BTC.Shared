@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{48DD28AF-3B92-4A3E-B49E-5C21343C5806}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BTC.Shared.QueryObjects</RootNamespace>
+    <AssemblyName>BTC.Shared.QueryObjects</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AjaxDbResult.cs" />
+    <Compile Include="ColumnConditional.cs" />
+    <Compile Include="Conditional.cs" />
+    <Compile Include="IOrderObject.cs" />
+    <Compile Include="ITable.cs" />
+    <Compile Include="JqueryDataTableRespounse.cs" />
+    <Compile Include="OrderObject.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryExecutor.cs" />
+    <Compile Include="QueryObject.cs" />
+    <Compile Include="QueryObjectBase.cs" />
+    <Compile Include="SortingDirection.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BTC.Shared.Automapper\BTC.Shared.Automapper.csproj">
+      <Project>{afbf41a1-9bbc-4628-a71e-b0271c0caae4}</Project>
+      <Name>BTC.Shared.Automapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BTC.Shared.Extensions\BTC.Shared.Extensions.csproj">
+      <Project>{09D20553-0F04-4F35-B513-9DB1286022C8}</Project>
+      <Name>BTC.Shared.Extensions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
