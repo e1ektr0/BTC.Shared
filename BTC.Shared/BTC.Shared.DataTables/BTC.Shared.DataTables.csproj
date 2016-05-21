@@ -81,7 +81,7 @@
       <Name>BTC.Shared.Automapper</Name>
     </ProjectReference>
     <ProjectReference Include="..\BTC.Shared.Extensions\BTC.Shared.Extensions.csproj">
-      <Project>{09D20553-0F04-4F35-B513-9DB1286022C8}</Project>
+      <Project>{09d20553-0f04-4f35-b513-9db1286022c8}</Project>
       <Name>BTC.Shared.Extensions</Name>
     </ProjectReference>
     <ProjectReference Include="..\BTC.Shared.QueryObjects\BTC.Shared.QueryObjects.csproj">
