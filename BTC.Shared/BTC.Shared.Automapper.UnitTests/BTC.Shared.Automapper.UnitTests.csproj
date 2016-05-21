@@ -60,9 +60,11 @@
   </Choose>
   <ItemGroup>
     <Compile Include="TestMapperConfig.cs" />
+    <Compile Include="TestMapperConfig2.cs" />
     <Compile Include="TestModel.cs" />
+    <Compile Include="TestModel2.cs" />
     <Compile Include="TestViewModel.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="AutomaperTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -17,15 +17,16 @@ namespace BTC.Shared.Automapper
         {
             var potencialConfig = typeof(T).Assembly.GetTypes()
                 .Where(n => !n.IsAbstract && n.IsClass && typeof(IMapConfig).IsAssignableFrom(n));
-            foreach (var type in potencialConfig)
+
+            Mapper.Initialize(cfg =>
             {
-                var config = (IMapConfig)_kernel.Get(type);
-                Mapper.Initialize(cfg =>
+                foreach (var type in potencialConfig)
                 {
+                    var config = (IMapConfig)_kernel.Get(type);
                     config.ConfigMapToDestination(cfg);
                     config.ConfigMapToSourse(cfg);
-                });
-            }
+                }
+            });
         }
     }
 }
