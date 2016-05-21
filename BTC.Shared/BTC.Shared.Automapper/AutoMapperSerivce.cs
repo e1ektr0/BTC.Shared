@@ -1,4 +1,5 @@
 using System.Linq;
+using AutoMapper;
 using Ninject;
 
 namespace BTC.Shared.Automapper
@@ -19,8 +20,11 @@ namespace BTC.Shared.Automapper
             foreach (var type in potencialConfig)
             {
                 var config = (IMapConfig)_kernel.Get(type);
-                config.ConfigMapToDestination();
-                config.ConfigMapToSourse();
+                Mapper.Initialize(cfg =>
+                {
+                    config.ConfigMapToDestination(cfg);
+                    config.ConfigMapToSourse(cfg);
+                });
             }
         }
     }

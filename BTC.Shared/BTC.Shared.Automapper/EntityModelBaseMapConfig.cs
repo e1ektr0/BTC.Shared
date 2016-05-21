@@ -17,23 +17,17 @@ namespace BTC.Shared.Automapper
         /// <summary>
         /// Генерирует карту для исходной сущности
         /// </summary>
-        public virtual void ConfigMapToSourse()
+        public virtual void ConfigMapToSourse(IMapperConfiguration cfg)
         {
-            Mapper.Initialize(cfg =>
-            {
-                MapToModel(cfg.CreateMap<TEntity, TModel>());
-            });
+            MapToModel(cfg.CreateMap<TEntity, TModel>());
         }
 
         /// <summary>
         /// Генерирует карту для конечной сущности
         /// </summary>
-        public virtual void ConfigMapToDestination()
+        public virtual void ConfigMapToDestination(IMapperConfiguration cfg)
         {
-            Mapper.Initialize(cfg =>
-            {
-                MapToEntity(cfg.CreateMap<TModel, TEntity>());
-            });
+            MapToEntity(cfg.CreateMap<TModel, TEntity>());
         }
     }
 }

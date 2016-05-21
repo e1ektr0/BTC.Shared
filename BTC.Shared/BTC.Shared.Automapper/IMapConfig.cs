@@ -1,8 +1,10 @@
+using AutoMapper;
+
 namespace BTC.Shared.Automapper
 {
     public interface IMapConfig
     {
-        void ConfigMapToSourse();
-        void ConfigMapToDestination();
+        void ConfigMapToSourse(IMapperConfiguration cfg);
+        void ConfigMapToDestination(IMapperConfiguration cfg);
     }
 }
