@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTC.Shared.Extensions", "BT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTC.Shared.QueryObjects", "BTC.Shared.QueryObjects\BTC.Shared.QueryObjects.csproj", "{48DD28AF-3B92-4A3E-B49E-5C21343C5806}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTC.Shared.Automapper.UnitTests", "BTC.Shared.Automapper.UnitTests\BTC.Shared.Automapper.UnitTests.csproj", "{A1490742-A528-4008-AB83-8C7752BD1190}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{48DD28AF-3B92-4A3E-B49E-5C21343C5806}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48DD28AF-3B92-4A3E-B49E-5C21343C5806}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48DD28AF-3B92-4A3E-B49E-5C21343C5806}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1490742-A528-4008-AB83-8C7752BD1190}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1490742-A528-4008-AB83-8C7752BD1190}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1490742-A528-4008-AB83-8C7752BD1190}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1490742-A528-4008-AB83-8C7752BD1190}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,5 +50,6 @@ Global
 		{AFBF41A1-9BBC-4628-A71E-B0271C0CAAE4} = {211B34B7-EF35-4D71-9B3C-0BBFB83C972D}
 		{09D20553-0F04-4F35-B513-9DB1286022C8} = {211B34B7-EF35-4D71-9B3C-0BBFB83C972D}
 		{48DD28AF-3B92-4A3E-B49E-5C21343C5806} = {211B34B7-EF35-4D71-9B3C-0BBFB83C972D}
+		{A1490742-A528-4008-AB83-8C7752BD1190} = {211B34B7-EF35-4D71-9B3C-0BBFB83C972D}
 	EndGlobalSection
 EndGlobal
