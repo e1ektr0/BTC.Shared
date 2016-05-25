@@ -8,6 +8,8 @@
 - https://www.nuget.org/packages/BTC.Shared.Automapper/
 
 Create some configs like this:
+
+
     public class AccountReportMapperConfig : EntityModelBaseMapConfig<AccountReport, AccountReportDto>
     {
         protected override void MapToModel(IMappingExpression<AccountReport, AccountReportDto> map)
