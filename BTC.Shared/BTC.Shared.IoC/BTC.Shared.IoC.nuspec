@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>BTC.Shared.Automapper</id>
-    <version>1.0.2</version>
-    <title>BTC.Shared.Automapper</title>
+    <id>BTC.Shared.IoC</id>
+    <version>1.0.0</version>
+    <title>BTC.Shared.IoC</title>
     <authors>E1ektr0</authors>
     <owners>E1ektr0</owners>
-    <description>BTC shared project</description>
+    <description>BTC shared project solution</description>
     <releaseNotes>
     </releaseNotes>
     <summary>
-      BTC shared project
+      BTC shared project  solution
     </summary>
     <language>en-US</language>
     <projectUrl>https://github.com/e1ektr0/BTC.Shared</projectUrl>
@@ -18,11 +18,10 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <copyright>BTC  2016</copyright>
     <dependencies>
-      <dependency id="AutoMapper" version="4.2.1"  />
       <dependency id="Ninject" version="3.2.2.0"  />
     </dependencies>
   </metadata>
   <files>
-    <file src="bin\BTC.Shared.Automapper.dll" target="lib\net45" />
+    <file src="bin\BTC.Shared.IoC.dll" target="lib\net45" />
   </files>
 </package>

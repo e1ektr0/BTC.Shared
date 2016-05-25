@@ -76,7 +76,6 @@ namespace BTC.Shared.Extensions
             throw new Exception("Should be a property");
         }
 
-        //todo:В отдельный файл экстеншена
         public static bool IsNullOrEmpty<TItem>(this IEnumerable<TItem> collection)
         {
             return (collection == null || !collection.Any());
@@ -84,8 +83,19 @@ namespace BTC.Shared.Extensions
 
         public static string GetLetters(this string str)
         {
-            return new string(str.Where(Char.IsLetter).ToArray());
+            return new string(str.Where(char.IsLetter).ToArray());
         }
 
+        public static string[] GetValues<T>(this T obj)
+        {
+            var result = new List<string>();
+            var fields = obj.GetType().GetFields();
+            foreach (var info in fields)
+            {
+                var item = info.GetValue(obj).ToString();
+                result.Add(item);
+            }
+            return result.ToArray();
+        }
     }
 }
