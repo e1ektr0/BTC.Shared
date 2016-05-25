@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>BTC.Shared.Extensions</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>BTC.Shared.Extensions</title>
     <authors>E1ektr0</authors>
     <owners>E1ektr0</owners>
@@ -17,6 +17,9 @@
     <iconUrl>http://btc-solutions.ru/img/ui/logo-header.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <copyright>BTC  2016</copyright>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="8.0.3"  />
+    </dependencies>
   </metadata>
   <files>
     <file src="bin\BTC.Shared.Extensions.dll" target="lib\net45" />
