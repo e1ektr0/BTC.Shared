@@ -2,7 +2,7 @@
 
 namespace BTC.Shared.IoC
 {
-    public static class SystemDateTime
+    public static class SystemDateTimec
     {
         public static Func<DateTime> NowDelegate { get; set; }
         public static Func<DateTime> UtcNowDelegate { get; set; }

@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>BTC.Shared.Extensions</id>
-    <version>1.0.2</version>
-    <title>BTC.Shared.Extensions</title>
+    <id>BTC.Shared.Mvc</id>
+    <version>1.0.0</version>
+    <title>BTC.Shared.Mvc</title>
     <authors>E1ektr0</authors>
     <owners>E1ektr0</owners>
-    <description>BTC shared project</description>
+    <description>BTC shared project solution</description>
     <releaseNotes>
     </releaseNotes>
     <summary>
-      BTC shared project
+      BTC shared project  solution
     </summary>
     <language>en-US</language>
     <projectUrl>https://github.com/e1ektr0/BTC.Shared</projectUrl>
@@ -18,10 +18,10 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <copyright>BTC  2016</copyright>
     <dependencies>
-      <dependency id="Newtonsoft.Json" version="8.0.3"  />
+      <dependency id="NLog" version="4.0.0"  />
     </dependencies>
   </metadata>
   <files>
-    <file src="bin\BTC.Shared.Extensions.dll" target="lib\net45" />
+    <file src="bin\BTC.Shared.Mvc.dll" target="lib\net45" />
   </files>
 </package>
