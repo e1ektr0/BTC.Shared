@@ -31,5 +31,5 @@ Create some configs like this:
  
 Register it on startup:
 
-var autoMapperSerivce = kernel.Get\<AutoMapperSerivce\>();
-autoMapperSerivce.RegisterMapperConfigs<AccountReportMapperConfig>();
+var autoMapperSerivce = kernel.Get\<AutoMapperSerivce\>();\
+autoMapperSerivce.RegisterMapperConfigs\<AccountReportMapperConfig\>();
