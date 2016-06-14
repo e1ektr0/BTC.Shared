@@ -23,7 +23,10 @@ namespace BTC.Shared.Automapper.UnitTests
         public void MapperMultipleConfigsTest()
         {
             var kernel = new StandardKernel();
-            kernel.Get<AutoMapperSerivce>().RegisterMapperConfigs<TestMapperConfig>();
+            var autoMapperSerivce = kernel.Get<AutoMapperSerivce>();
+            autoMapperSerivce.RegisterMapperConfigs<TestMapperConfig>();
+            autoMapperSerivce.RegisterMapperConfigs<TestMapperConfig2>();
+            autoMapperSerivce.Initialize();
             var model = new TestModel { Id = 1 };
 
             var viewModel = model.MapTo(new TestViewModel());

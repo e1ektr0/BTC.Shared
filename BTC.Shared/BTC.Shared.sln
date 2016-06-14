@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTC.Shared.IoC", "BTC.Share
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTC.Shared.Mvc", "BTC.Shared.Mvc\BTC.Shared.Mvc.csproj", "{F70D848A-8C10-4B6A-B8A5-19EEAFC1998D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTC.Shared.Automapper.UnitTestsHelper", "BTC.Shared.Automapper.UnitTestsHelper\BTC.Shared.Automapper.UnitTestsHelper.csproj", "{0C6C9247-604C-4D79-9AAB-AADDC52155A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{F70D848A-8C10-4B6A-B8A5-19EEAFC1998D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F70D848A-8C10-4B6A-B8A5-19EEAFC1998D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F70D848A-8C10-4B6A-B8A5-19EEAFC1998D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C6C9247-604C-4D79-9AAB-AADDC52155A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C6C9247-604C-4D79-9AAB-AADDC52155A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C6C9247-604C-4D79-9AAB-AADDC52155A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C6C9247-604C-4D79-9AAB-AADDC52155A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,5 +71,6 @@ Global
 		{A1490742-A528-4008-AB83-8C7752BD1190} = {211B34B7-EF35-4D71-9B3C-0BBFB83C972D}
 		{A797292F-AF62-48D6-AA97-538665976F58} = {211B34B7-EF35-4D71-9B3C-0BBFB83C972D}
 		{F70D848A-8C10-4B6A-B8A5-19EEAFC1998D} = {211B34B7-EF35-4D71-9B3C-0BBFB83C972D}
+		{0C6C9247-604C-4D79-9AAB-AADDC52155A7} = {211B34B7-EF35-4D71-9B3C-0BBFB83C972D}
 	EndGlobalSection
 EndGlobal

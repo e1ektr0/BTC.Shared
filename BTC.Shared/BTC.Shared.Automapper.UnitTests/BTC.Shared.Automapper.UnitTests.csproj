@@ -60,17 +60,19 @@
   </Choose>
   <ItemGroup>
     <Compile Include="TestMapperConfig.cs" />
-    <Compile Include="TestMapperConfig2.cs" />
-    <Compile Include="TestModel.cs" />
-    <Compile Include="TestModel2.cs" />
-    <Compile Include="TestViewModel.cs" />
     <Compile Include="AutomaperTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BTC.Shared.Automapper.UnitTestsHelper\BTC.Shared.Automapper.UnitTestsHelper.csproj">
+      <Project>{0C6C9247-604C-4D79-9AAB-AADDC52155A7}</Project>
+      <Name>BTC.Shared.Automapper.UnitTestsHelper</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BTC.Shared.Automapper\BTC.Shared.Automapper.csproj">
       <Project>{AFBF41A1-9BBC-4628-A71E-B0271C0CAAE4}</Project>
       <Name>BTC.Shared.Automapper</Name>
