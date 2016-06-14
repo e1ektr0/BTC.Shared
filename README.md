@@ -34,4 +34,5 @@ Register it on startup:
 var autoMapperSerivce = kernel.Get\<AutoMapperSerivce\>();\
 autoMapperSerivce.RegisterMapperConfigs\<AccountReportMapperConfig\>();\
 autoMapperSerivce.RegisterMapperConfigs\<TestMapperConfig2\>();\
+
 autoMapperSerivce.Initialize();
